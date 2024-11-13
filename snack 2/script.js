@@ -11,7 +11,11 @@ const newArray = [];
 for (let i = 0; i < squadre.length; i++) {
     squadre[i].puntiFatti = Math.floor(Math.random() * 100);
     squadre[i].falliSubiti = Math.floor(Math.random() * 80);
-    newArray.push(squadre[i].nome + " " + squadre[i].falliSubiti)
-}
+//     newArray.push(squadre[i].nome + " " + squadre[i].falliSubiti)
+ delete squadre[i].puntiFatti
+ 
+ }
 // output
+
+newArray.push(squadre)
 console.log(newArray)
